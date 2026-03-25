@@ -16,4 +16,9 @@ const fibs = (number) => {
     console.log("Iteration", fibArray);
 };
 
-fibs(8);
+fibs(8); 
+
+// 1st Assignment - Fibs - Using Recursion
+const fibsRec = (length) => {
+    //These are cases to exclude
+};
