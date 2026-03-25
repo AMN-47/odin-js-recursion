@@ -21,5 +21,10 @@ fibs(8);
 // 1st Assignment - Fibs - Using Recursion
 const fibsRec = (length) => {
     //These are cases to exclude
-    if (length < 1 || isNaN(length)) return "Invalid entry"
+    if (length < 1 || isNaN(length)) return "Invalid entry"; 
+
+    //Base Case
+    if (length === 1) return [0];
+
+    if (length === 2) return [0, 1];
 };
