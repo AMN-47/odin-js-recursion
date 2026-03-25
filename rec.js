@@ -15,3 +15,5 @@ const fibs = (number) => {
     };
     console.log("Iteration", fibArray);
 };
+
+fibs(8);
