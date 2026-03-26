@@ -34,8 +34,15 @@ const fibsRec = (length) => {
 console.log("recursion", fibsRec(8)); 
 
 //Assignment 2 - Merge Sort using Recursion
-const mergeort = (array) => {
+const mergeSort = (array) => {
     //Base Case
     if (array.length === 0) return "Invalid Array supplied";
     if (array.length === 1) return array
+
+    //recursion
+    const split = Math.floor(array.length/2);
+    const left = array.slice(0, split);
+    const right = array.slice(split, array.length)
+
+    return merge(mergeSort(left), mergeSort(right));
 };
