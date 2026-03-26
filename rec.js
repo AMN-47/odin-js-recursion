@@ -59,11 +59,17 @@ const merge = (left, right) => {
             incomingLeft++;
         } else {
             result.push(right[incomingRight]);
-            incomingRight;
+            incomingRight++;
         }
     }
 
     while (incomingLeft < left.length) {
-        
+        result.push(left[incomingLeft]);
+        incomingLeft++;
+    }
+
+    while (incomingRight < right.length) {
+        result.push(right[incomingRight]);
+        incomingRight++;
     }
 };
