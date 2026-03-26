@@ -31,3 +31,4 @@ const fibsRec = (length) => {
     //recursion
     return [...fibsRec(length - 1), fibsRec(length - 1)[length - 2] + fibsRec(length - 1)[length - 3]];
 };
+console.log("recursion", fibsRec(8));
