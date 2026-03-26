@@ -46,3 +46,11 @@ const mergeSort = (array) => {
 
     return merge(mergeSort(left), mergeSort(right));
 };
+
+const merge = (left, right) => {
+    //Merges both array parameters
+    const result = [];
+    const incomingLeft = 0;
+    const incomingRight = 0;
+    
+}
