@@ -72,4 +72,8 @@ const merge = (left, right) => {
         result.push(right[incomingRight]);
         incomingRight++;
     }
+
+    return result;
 };
+
+console.log("Recursion - Merge Sort Algo", mergeSort([8, 5, 1, 9, 7, 15, 4, 2, 0]));
