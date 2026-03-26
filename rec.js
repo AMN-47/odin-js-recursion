@@ -54,7 +54,13 @@ const merge = (left, right) => {
     const incomingRight = 0;
 
     while(incomingLeft < left.length && incomingRight < right.length) {
-        
+        if (left[incomingLeft] < right[incomingRight]) {
+            result.push(left[incomingLeft]);
+            incomingLeft++;
+        } else {
+            result.push(right[incomingRight]);
+            incomingRight;
+        }
     }
 
 }
