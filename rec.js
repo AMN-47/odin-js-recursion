@@ -26,5 +26,8 @@ const fibsRec = (length) => {
     //Base Case
     if (length === 1) return [0];
 
-    if (length === 2) return [0, 1];
+    if (length === 2) return [0, 1]; 
+
+    //recursion
+    return [...fibsRec(length - 1), fibsRec(length - 1)[length - 2] + fibsRec(length - 1)[length - 3]];
 };
