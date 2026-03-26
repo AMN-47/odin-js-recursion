@@ -31,4 +31,11 @@ const fibsRec = (length) => {
     //recursion
     return [...fibsRec(length - 1), fibsRec(length - 1)[length - 2] + fibsRec(length - 1)[length - 3]];
 };
-console.log("recursion", fibsRec(8));
+console.log("recursion", fibsRec(8)); 
+
+//Assignment 2 - Merge Sort using Recursion
+const mergeort = (array) => {
+    //Base Case
+    if (array.length === 0) return "Invalid Array supplied";
+    if (array.length === 1) return array
+};
