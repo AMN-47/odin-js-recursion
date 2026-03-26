@@ -63,4 +63,7 @@ const merge = (left, right) => {
         }
     }
 
-}
+    while (incomingLeft < left.length) {
+        
+    }
+};
